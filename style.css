@@ -177,6 +177,7 @@ nav {
   height: 350px;
   object-fit: cover;
   object-position: center;
+  
 }
 
 .product-info {
@@ -431,7 +432,7 @@ footer .copy {
     margin-top: 32px;
   }
   .product-img{
-    height: 400px;
+    height: 80%;
     object-fit: cover;
     object-position: center;
    

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Costom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Payment sheet</title>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <nav class="container">
+        <!-- menu icon -->
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <!-- logo -->
+        <a href="index.html" class="logo">COSTY</a>
+        <div id="navMenu" class="navbar">
+          <a href="#" class="nav-link">Woman</a>
+          <a href="#" class="nav-link">Man</a>
+          <a href="#" class="nav-link">Kids</a>
+          <a href="#" class="nav-link">Accessories</a>
+        </div>
+        <div id="shopping-icon">
+          <a href="card.html"
+          ><i class="bx bx-shopping-bag" id="card-icon"></i
+        ><span id="cart-icon-quantity">0</span></a>
+        </div>
+      </nav>
+    </header>
+    <!-- card -->
+    <section class="card-container container">
+      <a href="index.html" class="back-homepage">
+        <i class="bx bx-chevron-left"></i>
+        <span>Back To Home</span>
+      </a>
+      <h2 class="shopping-card">Shopping Card</h2>
+      <div class="card-box">
+        <div class="card-data">
+          <div id="cardItems">
+            <!-- <div class="card-item">
+              <img
+                src="https://images.undiz.com/on/demandware.static/-/Sites-ZLIN-master/default/dw2264d914/merch/BTS/654206666_x.jpg?sw=1250"
+                alt=""
+              />
+              <div class="card-info">
+                <h2 class="card-item-title">FUUSİON HUUDİE</h2>
+                <input
+                  type="number"
+                  min="1"
+                  value="1"
+                  class="card-item-quantity"
+                />
+              </div>
+              <h2 class="card-price">45$</h2>
+              <button class="remove-from-card">REMOVE</button>
+            </div> -->
+          </div>
+        </div>
+        <div class="card-totalBox">
+          <div id="cardTotal">
+            <h2><span>Total: </span>$</h2>
+          </div>
+          <a href="#" class="checkout-btn">CHECKOUT</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Style JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

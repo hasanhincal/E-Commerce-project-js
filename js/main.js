@@ -254,7 +254,23 @@ function toggleNavbarDisplay(){
   navMenu.classList.toggle('navbarDisplay');
 };
 
-menuIcon.addEventListener("click", toggleNavbarDisplay);
+menuIcon.addEventListener("click", (e)=>{
+  //*menuyü göster
+  toggleNavbarDisplay();
+  //*event bublingi durdur
+  e.stopPropagation();
+});
+
+document.addEventListener("click", ()=>{
+  if (navMenu.classList.contains("navbarDisplay")){
+    navMenu.classList.remove("navbarDisplay")
+  }
+});
+
+//*Menu içindeki tıklanmaların menuyü kapatmaması için;
+navMenu.addEventListener("click", (e)=>{
+  e.stopPropagation();
+})
 
 
 renderProducts();

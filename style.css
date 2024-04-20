@@ -395,30 +395,36 @@ footer .copy {
     display: flex;
     flex-direction: column;
     position:absolute;
-    top: 95px;
-    left: -140px;
-    background-color: hsl(0, 17%, 92%);
+    top: 75px;
+    right: 0;
+    left: 0;
+    background-color:var(--section-color);
     padding: 15px;
     border-radius: 4px;
     line-height: 2.5;
-    box-shadow: 0 0 10px var(--main-color);
-    transition: .3s ease-in-out;
+    box-shadow: 0 5px 8px rgba(188, 164, 164, .7);
+    transition: .8s ease-in-out;
+    clip-path: circle(0% at 0% 0%);
+  }
+  .navbarDisplay{
+    clip-path: circle(100% );
   }
   .nav-link{
     display:block;
     text-align: center;
-    border-bottom: 1px solid gray;
     width: 100%;
     transition: .5s ease-in-out;
   }
+  .nav-link:last-child{
+    margin-bottom: 15px;
+  }
+  
   .nav-link:hover{
     background-color: var(--main-color);
     color: var(--section-color);
    
   }
-  .navbarDisplay{
-    left: 25px;
-  }
+  
 
   .home-img::before{
     font-size: 5rem;

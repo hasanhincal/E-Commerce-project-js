@@ -6,7 +6,7 @@ This project is an online shopping platform where users can easily find, examine
 
 - HTML
 
-- SCSS
+- CSS3
 
 - JavaScript
 
